@@ -15,7 +15,6 @@ def vigenereEncrypt(message, key):
 
     myCipherText = ''
     z = 0
-    n = 0
     i = 0
 
     lengthDiff = len(message) - len(key) #If the key is shorter than the message, it loops through itself again until it is the length of the message.
