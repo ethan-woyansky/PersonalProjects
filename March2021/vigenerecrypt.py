@@ -12,7 +12,6 @@ alphaRValues = {value: key for key, value in alphaValues.items()}
 def vigenereEncrypt(message, key):
     message = message.upper()
     key = key.upper()
-
     myCipherText = ''
     z = 0
     i = 0
@@ -46,6 +45,7 @@ def vigenereEncrypt(message, key):
         
     return myCipherText
 
+###Invert the encryption process
 def vigenereDecrypt(message, key):
     message = message.upper()
     key = key.upper()
@@ -77,7 +77,7 @@ def vigenereDecrypt(message, key):
             z += 1
             continue
 
-        xAlphaVal = alphaValues[x] #
+        xAlphaVal = alphaValues[x]
         alphabet.rotate(-xAlphaVal)
         myVal = alphabet.index(message[z])
         cipherVal = alphaRValues[myVal]
