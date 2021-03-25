@@ -4,7 +4,6 @@
 import string
 import collections
 import easygui as eg #For easy entry. Would like to expand to Tkinter.
-from tkinter import Tk
 
 alphabet = collections.deque(string.ascii_lowercase.upper()) #alphabet = ['A', 'B', ... , 'Y', 'Z']
 alphaValues = dict(zip(string.ascii_lowercase.upper(), range(0,26))) #alpahbet2 = {'A': 1, 'B': 2, ... 'Y': 25, 'Z': 26}
